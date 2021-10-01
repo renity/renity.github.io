@@ -1,0 +1,44 @@
+/* basic styles*/
+html {
+  font-size: 100%;
+  line-height: 1.5rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  min-height: 100%;
+  max-width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/*End basic styles*/
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+p {
+  color: green;
+}
+
+.myColor {
+  color: orange;
+  font-size: 56px;
+}
+
+.myColorTwo {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+}
