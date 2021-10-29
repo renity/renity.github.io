@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Most Awesome Portfolio</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/glightbox.min.css">
   </head>
   <body>
     <header class="hero-box">
@@ -22,10 +23,11 @@
       </section>
     </header>
     <!-- Begin Portfolio Gallery-->
-    <section class="portfolio-gallery">
+    <section class="portfolio-container">
       <h1>Portfolio</h1>
+        <section class="portfolio-gallery">
       <div class="gallery-item">
-        <a class="glightbox" href="img/blue.PNG"></a>
+        <a class="glightbox" href="img/blue.PNG" data-glightbox="Title: Blue; description: Girl holding drumsticks with a blue background"></a>
         <img
           class="gallery-img"
           src="img/blue.PNG"
@@ -33,7 +35,7 @@
         /></a>
       </div>
       <div class="gallery-item">
-        <a class="glightbox" href="img/red.PNG"></a>
+        <a class="glightbox" href="img/red.PNG" data-glightbox="Title: Red; description: The same girl but with a red background instead"></a>
         <img
           class="gallery-img"
           src="img/red.PNG"
@@ -41,7 +43,7 @@
         /></a>
       </div>
       <div class="gallery-item">
-        <a class="glightbox" href="img/Fairy.PNG"></a>
+        <a class="glightbox" href="img/Fairy.PNG" data-glightbox="Title: Fairy Adventure; description: A fairy girl traversing through an unknown land"></a>
         <img
           class="gallery-img"
           src="img/Fairy.PNG"
@@ -49,7 +51,7 @@
         /></a>
       </div>
       <div class="gallery-item">
-        <a class="glightbox" href="img/20210910_Norman_Serenity_Digital_Painting.PNG"></a>
+        <a class="glightbox" href="img/20210910_Norman_Serenity_Digital_Painting.PNG" data-glightbox="Title: Pop; description: A girl sitting on a wall chewing bubblegum"></a>
         <img
           class="gallery-img"
           src="img/20210910_Norman_Serenity_Digital_Painting.PNG"
@@ -57,7 +59,7 @@
         /></a>
       </div>
       <div class="gallery-item">
-        <a class="glightbox" href="img/Mina_:3.PNG"></a>
+        <a class="glightbox" href="img/Mina_:3.PNG" data-glightbox="Title: Mina Ashido; description: Mina Ashido from My Hero Academia"></a>
         <img
           class="gallery-img"
           src="img/Mina_:3.PNG"
@@ -65,7 +67,7 @@
         /></a>
       </div>
       <div class="gallery-item">
-        <a class="glightbox" href="img/Uravity_🪐💫✨.PNG"></a>
+        <a class="glightbox" href="img/Uravity_🪐💫✨.PNG" data-glightbox="Title: Uravity; description: Uraraka Ochaco (Uravity) from My Hero Academia"></a>
         <img
           class="gallery-img"
           src="img/Uravity_🪐💫✨.PNG"
@@ -73,5 +75,10 @@
         /></a>
       </div>
     </section>
+  </section>
+  <script src="js/glightbox.min.js"></script>
+  <script type="text/javascript">
+  const lightbox = GLightbox({ loop: true});
+  </script>
   </body>
 </html>
