@@ -27,7 +27,7 @@ img {
 }
 /*End basic styles*/
 
-/* Begin hero styles*/
+/* Begin Hero Styles */
 .hero-box {
   display: grid;
   grid-template-columns: 1fr;
@@ -48,10 +48,22 @@ img {
   grid-row: 1 / -1;
 }
 
+.hero-image-box::after {
+  content: "";
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 .hero-image {
+  display: grid;
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .hero-text-box {
@@ -62,6 +74,21 @@ img {
   z-index: 10;
   text-align: center;
 }
+
+.hero-heading {
+  font-size: 3rem;
+  line-height: 3rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.hero-text {
+  font-size: 2rem;
+  color: white;
+}
+
+/* Begin Portfolio Styles */
 
 .portfolio-container {
   margin: 1rem auto 0 auto;
@@ -99,11 +126,36 @@ img {
 
 /* Media Queries Below */
 
-.portfolio-container {
-  max-width: 1400px;
+@media (min-width: 600px) {
+  .hero-heading {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .hero-text {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+  .portfolio-container h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    padding-left: 1rem;
+  }
 }
 
-.portfolio-container h1 {
-  font-size: 6rem;
-  line-height: 6rem;
+@media (min-width: 920px) {
+  .hero-heading {
+    font-size: 9rem;
+    line-height: 9rem;
+  }
+  .hero-text {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .portfolio-container {
+    max-width: 1400px;
+  }
+  .portfolio-container h1 {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
 }
